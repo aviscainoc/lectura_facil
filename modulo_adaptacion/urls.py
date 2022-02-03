@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from adaptacion_app import views
+
 urlpatterns = [
+    path("procesar/", views.adaptador, name="procesar"),
     path('admin/', admin.site.urls),
 ]
