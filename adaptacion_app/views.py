@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
+from pysbd.utils import PySBDFactory #Para separar oraciones
+import math
+
 # Create your views here.
 
 def adaptador(request):
@@ -11,5 +14,5 @@ def adaptador(request):
 
         texto_adaptado=texto_orignal 
 
-    return render(request, "/static/contact.html", {'texto_adaptado':texto_adaptado})
+    return render(request, "contact.html", {'texto_adaptado':texto_adaptado})
 
