@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
-from pysbd.utils import PySBDFactory #Para separar oraciones
-import math
+#from pysbd import PySBDFactory #Para separar oraciones
+#import math
 
 # Create your views here.
 
